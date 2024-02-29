@@ -1,0 +1,378 @@
+/* Custom font */
+@font-face {
+  font-family: Roboto Bold;
+  src: url(sansation_light.woff);
+}
+
+/************** CSS Reset **************/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/************** End CSS Reset **************/
+
+#omars-container {
+  /* display: flex; */
+  width: 100vw;
+  height: 100vh;
+  max-height: 2112px;
+  flex-direction: column;
+  
+}
+
+
+
+/************* Common Style *************/
+
+
+/* body {
+  background-image: url(./images/r9.gif);
+} */
+
+#background-images {
+  display: block;
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  align-items: flex-start; 
+  position: absolute;
+  z-index: -1;
+}
+
+iframe {
+  overflow: hidden;
+}
+
+#main-title {
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  width: 100%;
+  height: 1080px;
+  position: absolute;
+  z-index: 1;
+}
+
+#header {
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 19vw;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: normal;
+  word-break: break-word  ;  
+  color: rgba(0, 0, 183, 0.65);
+}
+
+#main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* gap: 373px; */
+  z-index: 0;
+  padding-top: 72px;
+}
+
+#made-at {
+  /* background-color: blanchedalmond; */
+  display: flex;
+  width: 100%;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  font-family: "IBM Plex Serif";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #29298E;
+  gap: -9px;
+}
+
+#directed-by {
+  /* background-color: crimson; */
+  display: flex;
+  width: 85%;
+  justify-content: center;
+  align-items: center;
+  color: #29298E;
+  text-align: center;
+  font-family: "IBM Plex Serif";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#credits {
+  /* background-color: greenyellow; */
+  display: flex;
+  flex-direction: row;
+  color: #29298E;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 90%;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+#left-column {
+  text-align: left;
+}
+
+#right-column {
+  text-align: right;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-content: baseline;
+  padding-top: 400px;
+  padding-bottom: 20px;
+}
+
+#year {
+  color: #29298E;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#stupid-phone {
+  display: flex;
+  flex-direction : column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+}
+
+#phone-main {
+  display: flex;
+  flex-direction: column;
+  max-height: 1080px;
+  padding-top: 73px;
+  padding-left: 73px;
+  padding-right: 10px;
+  gap: 58px;
+}
+
+.phone-headings {
+  color: #0029FF;
+  font-family: Roboto;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+#phone-body {
+  color: #0029FF;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#phone-footer {
+  /* background-color: crimson; */
+  width: 80%;
+  padding-left: 73px;
+  margin-top: 70%;
+  
+  
+}
+
+/************* END Common Styles *************/
+
+/************* Media Query *************/
+
+@media (min-width: 10px) {
+  /* body {
+    background-color: red;
+  } */
+  #omars-container {
+    display: none;
+  }
+  /* #background-images div{
+    display: none;
+  } */
+  #stupid-phone {
+    display: flex;
+  }
+}
+
+@media (min-width: 620px) {
+  body {
+    background-color: green;
+  }
+  #img-1 {
+    display: none;
+  }
+  #img-2 {
+    display: none;
+  }
+  #img-3 {
+    display: none;
+  }
+  #img-4 {
+    display: none;
+  }
+  #img-5 {
+    display: block;
+  }
+  #omars-container {
+    display: block;
+  }
+  #main-body {
+    gap: 513px;
+  }
+  #header {
+    font-size: 224px;
+  }
+  #stupid-phone {
+    display: none;
+  }
+  
+}
+
+@media (min-width: 815px) {
+  body {
+    background-color: blue;
+  }
+  #img-1 {
+    display: none;
+  }
+  #img-2 {
+    display: none;
+  }
+  #img-3 {
+    display: none;
+  }
+  #img-4 {
+    display: block;
+  }
+  #img-5 {
+    display: none;
+  }
+  #header {
+    font-size: 224px;
+  }
+  #main-body {
+    gap: 393px;
+  }
+}
+
+@media (min-width: 1050px) {
+  body {
+    background-color: cyan;
+  }
+  #img-1 {
+    display: none;
+  }
+  #img-2 {
+    display: none;
+  }
+  #img-3 {
+    display: block;
+  }
+  #img-4 {
+    display: none;
+  }
+  #img-5 {
+    display: none;
+  }
+  #header {
+    font-size: 19vw;
+  }
+  #main-body {
+    gap: 393px;
+  }
+}
+
+@media (min-width: 1300px) {
+  body {
+    background-color: orange;
+  }
+  #img-1 {
+    display: none;
+  }
+  #img-2 {
+    display: block;
+  }
+  #img-3 {
+    display: none;
+  }
+  #img-4 {
+    display: none;
+  }
+  #img-5 {
+    display: none;
+  }
+  #header {
+    font-size: 19vw;
+  }
+  #main-body {
+    gap: 393px;
+  }
+}
+
+@media (min-width: 1650px) {
+  body {
+    background-color: indigo;
+  }
+  #img-1 {
+    display: block;
+  }
+  #img-2 {
+    display: none;
+  }
+  #img-3 {
+    display: none;
+  }
+  #img-4 {
+    display: none;
+  }
+  #img-5 {
+    display: none;
+  }
+  #header {
+    font-size: 19vw;
+  }
+  #main-body {
+    gap: 393px;
+  }
+}
+
+/********** END Media Query *************/
