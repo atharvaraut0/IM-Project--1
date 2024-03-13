@@ -269,7 +269,7 @@ iframe {
 
 @media (min-width: 815px) {
   body {
-    background-color: blue;
+    background-image: url(./images/image-1.jpg.png);
   }
   #img-1 {
     display: none;
@@ -281,7 +281,7 @@ iframe {
     display: none;
   }
   #img-4 {
-    display: block;
+    display: none;
   }
   #img-5 {
     display: none;
